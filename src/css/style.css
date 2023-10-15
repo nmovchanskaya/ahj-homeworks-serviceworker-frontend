@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: 500px;
+}
+.news-item{
+    margin-bottom: 20px
+}
+.news__content {
+    display: flex;
+}
+.news__date {
+    margin-bottom: 10px;
+}
+.news__content_img {
+    width: 150px;
+}
+.new__content_title {
+    padding-left: 10px;
+}
+.blured {
+    filter: blur(5px);
+}
