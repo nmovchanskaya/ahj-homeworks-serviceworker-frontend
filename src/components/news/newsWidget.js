@@ -72,7 +72,7 @@ export default class NewsWidget {
     const date = new Date(item.date);
     let img;
     let itemClass;
-    if (item.photo.includes('http://')) {
+    if (item.photo.includes('http://') || item.photo.includes('https://')) {
       // fake news
       img = item.photo;
     } else {
