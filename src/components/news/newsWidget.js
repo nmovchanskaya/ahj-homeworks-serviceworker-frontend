@@ -8,7 +8,7 @@ export default class NewsWidget {
       this.url = 'http://localhost:7070/';
     } else {
       this.url = 'http://localhost:7070/';
-      //'https://ahj-homeworks-serviceworker-backend-a8hi.onrender.com/news';
+      // 'https://ahj-homeworks-serviceworker-backend-a8hi.onrender.com/news';
     }
     this.NewsService = new NewsService(this.url);
   }
@@ -43,8 +43,7 @@ export default class NewsWidget {
       .then(async (response) => {
         if (response !== undefined) {
           return response.json();
-        }
-        else {
+        } else {
           // else show fake news
           return this.getFakeData();
         }
@@ -76,14 +75,12 @@ export default class NewsWidget {
     if (item.photo.includes('http://')) {
       // fake news
       img = item.photo;
-    }
-    else {
+    } else {
       img = this.url + item.photo;
     }
     if (blured) {
       itemClass = 'news-item blured';
-    }
-    else {
+    } else {
       itemClass = 'news-item';
     }
 
