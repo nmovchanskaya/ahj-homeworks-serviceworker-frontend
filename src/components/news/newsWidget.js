@@ -7,7 +7,7 @@ export default class NewsWidget {
     if (process.env.NODE_ENV === 'development') {
       this.url = 'http://localhost:7070/';
     } else {
-      this.url = 'https://ahj-homeworks-serviceworker-backend.onrender.com';
+      this.url = 'abc';//'https://ahj-homeworks-serviceworker-backend.onrender.com';
     }
     this.NewsService = new NewsService(this.url);
   }
