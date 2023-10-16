@@ -16,5 +16,4 @@ if ('serviceWorker' in navigator) {
 
 const newsWidget = new NewsWidget('.container');
 newsWidget.bindToDOM();
-newsWidget.renderContent();
 newsWidget.getNews();

@@ -16,9 +16,6 @@ export default class NewsWidget {
     this.containerElem = document.querySelector(this.container);
   }
 
-  renderContent() {
-  }
-
   getFakeData() {
     return {
       news: [
@@ -69,14 +66,9 @@ export default class NewsWidget {
   renderNewsItem(item, blured) {
     const newsElem = document.createElement('div');
     const date = new Date(item.date);
-    // let img;
+    const img = item.photo;
     let itemClass;
-    // if (item.photo.includes('http://') || item.photo.includes('https://')) {
-      // fake news
-      const img = item.photo;
-    // } else {
-    //  img = this.url + item.photo;
-    // }
+
     if (blured) {
       itemClass = 'news-item blured';
     } else {
